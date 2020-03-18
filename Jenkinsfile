@@ -11,7 +11,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+				sh 'npm install ajv@^6.0.0'
+				sh 'npm install --no-optional'
             }
         }
         stage('Test') {
