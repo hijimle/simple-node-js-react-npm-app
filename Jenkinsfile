@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'npm i -g npm'
+				sh 'npm install npm@6.14.2 --no-optional'
 				sh 'npm -v'
             }
         }
