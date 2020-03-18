@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'npm install npm@6.14.2'
+				sh 'npm i -g npm'
 				sh 'npm -v'
             }
         }
@@ -22,6 +22,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
+				sh 'npm -v'
                 sh './jenkins/scripts/deliver.sh' 
                 input message: 'Finished using the web site? (Click "Proceed" to continue)' 
                 sh './jenkins/scripts/kill.sh' 
