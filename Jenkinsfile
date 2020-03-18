@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'node:6-alpine'
             args '-p 3000:3000'
-            args '-u root:sudo -v /usr/local/lib/node_modules:/node_modules'
+            args '-u root:root -v /usr/local/lib/node_modules:/node_modules'
         }
     }
     environment { 
