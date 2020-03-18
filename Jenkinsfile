@@ -3,6 +3,7 @@ pipeline {
         docker {
             image 'node:6-alpine'
             args '-p 3000:3000'
+            args '-u root:sudo -v /usr/local/lib/node_modules:/node_modules'
         }
     }
     environment { 
@@ -11,7 +12,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'sudo chown -R $USER /usr/local/lib/node_modules'
 				sh 'npm i -g npm'
 				sh 'npm -v'
             }
