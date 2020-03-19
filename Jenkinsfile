@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:6-alpine'
+            image 'node:13.10-alpine'
             args '-p 3000:3000'
             args '-u root:root -v /usr/local/lib/node_modules:/node_modules'
         }
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'npm install npm@6.14.2 --no-optional'
+				sh 'npm install'
 				sh 'npm -v'
             }
         }
