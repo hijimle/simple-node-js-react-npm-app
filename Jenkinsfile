@@ -2,8 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:13.10-alpine'
-            args '-p 3000:3000'
-            args '-u root:root -v /usr/local/lib/node_modules:/node_modules'
+            args '-p 4000:4000'
         }
     }
     environment { 
