@@ -28,6 +28,8 @@ set +x
 curl http://localhost:3000
 ping http://localhost:3000
 wget http://localhost:3000
+nslookup localhost
+netstat -an
 ps -a
 docker-machine ip
 echo 'Now...'
