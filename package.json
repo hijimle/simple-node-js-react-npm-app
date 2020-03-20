@@ -8,7 +8,6 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
-    #"start": "react-scripts start",
 	"start": "PORT=3006 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
