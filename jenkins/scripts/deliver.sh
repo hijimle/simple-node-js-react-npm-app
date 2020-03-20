@@ -28,6 +28,7 @@ set +x
 curl http://localhost:3000
 ping http://localhost:3000
 wget http://localhost:3000
+ps -a
 echo 'Now...'
 echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'
 echo '(This is why you specified the "args ''-p 3000:3000''" parameter when you'
