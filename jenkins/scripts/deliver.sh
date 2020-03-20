@@ -7,7 +7,8 @@ echo 'correctly bundles React in production mode and optimizes the build for'
 echo 'the best performance.'
 whoami;date
 set -x
-yarn run build
+echo 'replaced npm run build with yarn run build'
+npm run build
 set +x
 
 echo 'The following "npm" command runs your Node.js/React application in'
@@ -20,7 +21,7 @@ echo 'of the previously run process (i.e. "npm start") and writes this value to'
 echo 'the file ".pidfile".'
 set -x
 echo 'replaced npm start & with yarn start &'
-yarn start &
+npm start &
 sleep 1
 echo $! > .pidfile
 set +x
