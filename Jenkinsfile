@@ -24,6 +24,7 @@ pipeline {
             steps {
 				sh 'npm -v'
                 sh './jenkins/scripts/deliver.sh' 
+				sh 'whoami'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)' 
                 sh './jenkins/scripts/kill.sh' 
             }
