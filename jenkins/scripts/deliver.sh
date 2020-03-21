@@ -26,9 +26,9 @@ yarn start &
 sleep 1
 echo $! > .pidfile
 set +x
-curl http://localhost:3000
-ping http://localhost:3000
-wget http://localhost:3000
+curl http://localhost:5556
+ping http://localhost:5556
+wget http://localhost:5556
 nslookup localhost
 netstat -an
 ps -a
