@@ -9,7 +9,7 @@ whoami;date
 set -x
 echo 'does not work - npm i @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-numeric-separator --save-dev'
 echo 'replaced npm run build with yarn run build'
-yarn run build
+npm run build
 set +x
 
 echo 'The following "npm" command runs your Node.js/React application in'
@@ -22,7 +22,7 @@ echo 'of the previously run process (i.e. "npm start") and writes this value to'
 echo 'the file ".pidfile".'
 set -x
 echo 'replaced npm start & with yarn start &'
-yarn start &
+npm start &
 sleep 1
 echo $! > .pidfile
 set +x
@@ -33,6 +33,7 @@ nslookup localhost
 netstat -an
 ps -a
 docker-machine ip
+cat /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/durable-f63f1410/jenkins-result.txt
 echo 'Now...'
 echo 'Visit was http://localhost:3000 now http://localhost:5556 to see your Node.js/React application in action.'
 echo '(This is why you specified the "args ''-p 3000:3000''" parameter when you'
