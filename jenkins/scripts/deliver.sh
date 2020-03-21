@@ -7,7 +7,7 @@ echo 'correctly bundles React in production mode and optimizes the build for'
 echo 'the best performance.'
 whoami;date
 set -x
-npm i @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-numeric-separator --save-dev
+echo 'does not work - npm i @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-numeric-separator --save-dev'
 echo 'replaced npm run build with yarn run build'
 yarn run build
 set +x
