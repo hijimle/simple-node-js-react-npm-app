@@ -8,13 +8,14 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.0"
   },
-  "resolutions": {
-    "@babel/preset-env": "^7.8.7"
-  },
   "scripts": {
+	"preinstall": "npx npm-force-resolutions",
 	"start": "PORT=3000 react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "resolutions": {
+    "@babel/preset-env": "^7.8.7"
   }
 }
