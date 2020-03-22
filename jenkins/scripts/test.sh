@@ -10,7 +10,9 @@ echo 'installing this dependency, it would typically be done so using this'
 echo 'flag. For a comprehensive explanation about "devDependencies", see'
 echo 'https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies.'
 set -x
-yarn add cross-env --dev
+echo 'yarn add cross-env --dev'
+npm install --save-dev cross-env
+
 set +x
 
 echo 'The following "npm" command tests that your simple Node.js/React'
