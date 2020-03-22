@@ -12,8 +12,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'npm install'
-				sh 'npm -v'
+				sh 'yarn install'
+				sh 'yarn -v'
             }
         }
         stage('Test') {
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-				sh 'npm -v'
+				sh 'yarn -v'
                 sh './jenkins/scripts/deliver.sh' 
 				sh 'whoami'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)' 
