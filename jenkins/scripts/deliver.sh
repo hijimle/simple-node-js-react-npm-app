@@ -23,7 +23,7 @@ echo 'the file ".pidfile".'
 set -x
 echo 'replaced npm start & with yarn start &'
 yarn start &
-cp /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/* /var/jenkins_home/workspace/jimle
+cp -r /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/* /var/jenkins_home/workspace/jimle
 sleep 1
 echo $! > .pidfile
 set +x
