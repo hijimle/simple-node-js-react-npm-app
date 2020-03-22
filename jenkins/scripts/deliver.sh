@@ -9,7 +9,7 @@ whoami;date
 set -x
 echo 'does not work - npm i @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-numeric-separator --save-dev'
 echo 'replaced npm run build with yarn run build'
-npm run build
+npm run build --loglevel verbose
 
 set +x
 
@@ -23,7 +23,7 @@ echo 'of the previously run process (i.e. "npm start") and writes this value to'
 echo 'the file ".pidfile".'
 set -x
 echo 'replaced npm start & with yarn start &'
-npm start &
+npm start --loglevel verbose &
 sleep 1
 echo $! > .pidfile
 set +x

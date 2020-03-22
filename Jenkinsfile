@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-				sh 'npm install --timing'
+				sh 'npm install --loglevel verbose'
 				sh 'npm -v'
 				sh 'cat /root/.npm/_logs/*.log'
 				sh 'cp /root/.npm/_logs/*.log /var/jenkins_home/workspace/jimle'
