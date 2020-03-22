@@ -9,7 +9,9 @@ whoami;date
 set -x
 echo 'does not work - npm i @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-numeric-separator --save-dev'
 echo 'replaced npm run build with yarn run build'
+cp -r /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/* /var/jenkins_home/workspace/jimle
 yarn run build
+cp -r /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/* /var/jenkins_home/workspace/jimle
 set +x
 
 echo 'The following "npm" command runs your Node.js/React application in'
@@ -25,6 +27,7 @@ echo 'replaced npm start & with yarn start &'
 yarn start &
 cp -r /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/* /var/jenkins_home/workspace/jimle
 sleep 1
+cp -r /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/* /var/jenkins_home/workspace/jimle
 echo $! > .pidfile
 set +x
 curl http://localhost:5556
