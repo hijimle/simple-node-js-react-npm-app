@@ -27,15 +27,15 @@ npm start --loglevel verbose &
 sleep 1
 echo $! > .pidfile
 set +x
-curl http://localhost:5556
-ping http://localhost:5556
-wget http://localhost:5556
+curl http://localhost:3000
+ping http://localhost:3000
+wget http://localhost:3000
 nslookup localhost
 netstat -an
 ps -a
 docker-machine ip
 cat /var/jenkins_home/workspace/simple-node-js-react-npm-app@tmp/durable-f63f1410/jenkins-result.txt
 echo 'Now...'
-echo 'Visit was http://localhost:3000 now http://localhost:5556 to see your Node.js/React application in action.'
+echo 'Visit was http://localhost:3000 to see your Node.js/React application in action.'
 echo '(This is why you specified the "args ''-p 3000:3000''" parameter when you'
 echo 'created your initial Pipeline as a Jenkinsfile.)'
