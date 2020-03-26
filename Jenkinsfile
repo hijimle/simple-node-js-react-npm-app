@@ -14,6 +14,8 @@ pipeline {
             steps {
 				sh 'npm install --loglevel verbose'
 				sh 'npm -v'
+                sh 'npm install --save bootstrap'
+                sh 'npm install --save node-sass'
 				sh 'npm config get cache'
             }
         }
