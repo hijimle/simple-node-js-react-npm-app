@@ -2,45 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './App.scss';
+import DesignerNavbar from './DesignerNavbar/DesignerNavbar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="container">
-          <Navbar bg="light">
-            <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-          </Navbar>
-          <br />
-          <Navbar bg="light">
-            <Navbar.Brand>Brand text</Navbar.Brand>
-          </Navbar>
-          <br />
-          <Navbar bg="dark">
-            <Navbar.Brand href="#home">
-              <img
-                src="/logo.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt="React Bootstrap logo"
-              />
-            </Navbar.Brand>
-          </Navbar>
-          <br />
-          <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">
-              <img
-                alt=""
-                src="/logo.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />{' '}
-              React Bootstrap
-            </Navbar.Brand>
-          </Navbar>
-        </div>
+        <DesignerNavbar></DesignerNavbar>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
