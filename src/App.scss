@@ -1,5 +1,6 @@
-// Override default variables before the import
-$body-bg: #000;
+/* The following line can be included in a src/App.scss */
 
-// Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap";
+/* The following line can be included in a src/App.scss */
+
+@import "custom";
