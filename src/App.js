@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import '../node_modules/react-bootstrap/dist/react-bootstrap.min.css';
+import './node_modules/react-bootstrap/dist/react-bootstrap.min.css';
 import './App.css';
 import './App.scss';
 
