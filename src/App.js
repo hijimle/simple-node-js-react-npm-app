@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/react-bootstrap/dist/react-bootstrap.min.css';
 import './App.css';
 import './App.scss';
 
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <>
+        <div className="container">
           <Navbar bg="light">
             <Navbar.Brand href="#home">Brand link</Navbar.Brand>
           </Navbar>
@@ -41,7 +41,7 @@ class App extends Component {
               React Bootstrap
             </Navbar.Brand>
           </Navbar>
-        </>
+        </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
